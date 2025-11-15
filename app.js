@@ -26,6 +26,14 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+const cors = require('cors');
+
+app.use(cors({
+    origin: 'https://101513972-comp3123-assignment2-reac.vercel.app/',
+    methods: ['GET','POST','PUT','DELETE','OPTIONS'],
+    allowedHeaders: ['Content-Type','Authorization']
+}));
+
 initializePassport(passport);
 app.use(passport.initialize());
 
