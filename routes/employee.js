@@ -3,7 +3,6 @@ var router = express.Router();
 var employeeController = require('../controllers/employee.controller');
 
 
-
 router.get('/emp/employees', async function (req, res) {
 
     var emplArr = await employeeController.getAllEmployees();
@@ -80,11 +79,30 @@ router.delete('/emp/employees', async function (req, res) {
 
     if (result.status) {
         return res.status(204).json(result);
-    }else{
+    } else {
         return res.status(400).json(result);
     }
 
 
 })
+
+
+router.get('/emp/employees/search', async function (req, res) {
+    var keyword = req.query.keyword;
+    if (!keyword) {
+        var result = await employeeController.searchEmployee(keyword);
+        if (result) {
+            if (result.status) {
+                return res.status(200).json(result);
+            } else {
+                return res.status(404).json({error: 'Employee not found'});
+            }
+        }
+    }
+})
+
+
+
+
 
 module.exports = router;
