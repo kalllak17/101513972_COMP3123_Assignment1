@@ -81,23 +81,16 @@ exports.deleteEmployee = async (id) => {
 }
 
 exports.searchEmployee = async (searchKeyword) => {
+    const regex = searchKeyword ? new RegExp(searchKeyword, 'i') : /.*/; // match all if empty
     const res = await Employee.find({
         $or: [
-            {department: {$regex: searchKeyword, $options: 'i'}},
-            {position: {$regex: searchKeyword, $options: 'i'}}
+            { department: { $regex: regex } },
+            { position: { $regex: regex } }
         ]
     }).limit(50);
 
-    if (res) {
-        return res;
-    } else {
-        return {
-            status: false,
-            message: "Employee not found."
-        };
-    }
+    return res;
 }
-
 
 async function findEmployeeById(id) {
     var employee = await Employee.findById(id);

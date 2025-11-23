@@ -88,18 +88,20 @@ router.delete('/emp/employees', async function (req, res) {
 
 
 router.get('/emp/search', async function (req, res) {
-    var keyword = req.query.keyword;
-    if (!keyword) {
-        var result = await employeeController.searchEmployee(keyword);
-        if (result) {
-            if (result.status) {
-                return res.status(200).json(result);
-            } else {
-                return res.status(404).json({error: 'Employee not found'});
-            }
+    try {
+        const keyword = req.query.keyword || "";
+        const result = await employeeController.searchEmployee(keyword);
+
+        if (result && result.length > 0) {
+            return res.status(200).json(result);
+        } else {
+            return res.status(404).json({ error: 'Employee not found' });
         }
+    } catch (err) {
+        console.error(err);
+        return res.status(500).json({ error: 'Server error' });
     }
-})
+});
 
 
 
