@@ -32,12 +32,13 @@
 					"raw": "{\n\t\"name\": \"Add your name in the body\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/v1/emp/employees",
-					"protocol": "http",
+					"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/employees",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"comp3123assignment01",
+						"vercel",
+						"app"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"v1",
@@ -107,6 +108,95 @@
 					],
 					"cookie": [],
 					"body": "[\n    {\n        \"_id\": \"68dc274590bbe2717ad118bf\",\n        \"first_name\": \"Alice\",\n        \"last_name\": \"Johnson\",\n        \"email\": \"alice.johnson@example.com\",\n        \"position\": \"Designer\",\n        \"salary\": 85000,\n        \"date_of_joining\": \"2023-08-10T00:00:00.000Z\",\n        \"department\": \"Design\",\n        \"created_at\": \"2025-09-30T18:53:57.402Z\",\n        \"updated_at\": null,\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "/api/v1/emp/employees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Add your name in the body\"\n}"
+						},
+						"url": {
+							"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/employees",
+							"protocol": "https",
+							"host": [
+								"comp3123assignment01",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"emp",
+								"employees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://101513972-comp3123-assignment2-reac.vercel.app"
+						},
+						{
+							"key": "Age",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Nov 2025 21:44:08 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"1046-0UnseW2+MTq1HsbSzIYWBJHly8M\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "cle1::iad1::86xh9-1763934248432-55f219a2ee93"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6923716084d50d90b9b8928b\",\n        \"first_name\": \"test\",\n        \"last_name\": \"test\",\n        \"email\": \"test@test.com\",\n        \"position\": \"wwwqqq\",\n        \"salary\": 123123,\n        \"date_of_joining\": \"2025-11-16T00:00:00.000Z\",\n        \"department\": \"rrrttt\",\n        \"created_at\": \"2025-11-23T20:41:04.970Z\",\n        \"updated_at\": null,\n        \"profile_picture\": \"data:image/avif;base64,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\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"69237fbf504838776e524327\",\n        \"first_name\": \"Alice\",\n        \"last_name\": \"Johnson\",\n        \"email\": \"alice.johnson@example.com\",\n        \"position\": \"Designer\",\n        \"salary\": 95000,\n        \"date_of_joining\": \"2023-08-10T00:00:00.000Z\",\n        \"department\": \"Design\",\n        \"created_at\": \"2025-11-23T21:42:23.274Z\",\n        \"updated_at\": \"2025-11-23T21:44:04.611Z\",\n        \"__v\": 0\n    }\n]"
 				}
 			]
 		},
@@ -125,12 +215,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/v1/emp/employees",
-					"protocol": "http",
+					"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/employees",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"comp3123assignment01",
+						"vercel",
+						"app"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"v1",
@@ -204,6 +295,92 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"message\": \"Employee created successfully.\",\n    \"employee_id\": \"68dc274590bbe2717ad118bf\"\n}"
+				},
+				{
+					"name": "/api/v1/emp/employees",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"first_name\":\"Alice\",\n\"last_name\":\"Johnson\",\n\"email\":\"alice.johnson@example.com\",\n\"position\":\"Designer\",\n\"salary\":85000,\n\"date_of_joining\":\"2023-08-10T00:00:00.000Z\",\n\"department\":\"Design\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/employees",
+							"protocol": "https",
+							"host": [
+								"comp3123assignment01",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"emp",
+								"employees"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://101513972-comp3123-assignment2-reac.vercel.app"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "85"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Nov 2025 21:42:23 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"55-Mt5T+gG1aBBz6VXCgKSq7prlHOc\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "cle1::iad1::8xl5q-1763934143078-66dcc4afda5e"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Employee created successfully.\",\n    \"employee_id\": \"69237fbf504838776e524327\"\n}"
 				}
 			]
 		},
@@ -232,18 +409,19 @@
 					"raw": "{\n\t\"name\": \"Add your name in the body\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/v1/emp/employees/68dc274590bbe2717ad118bf",
-					"protocol": "http",
+					"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/employees/6913555608c8145801d397c3",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"comp3123assignment01",
+						"vercel",
+						"app"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"v1",
 						"emp",
 						"employees",
-						"68dc274590bbe2717ad118bf"
+						"6913555608c8145801d397c3"
 					]
 				},
 				"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
@@ -309,6 +487,96 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"_id\": \"68dc274590bbe2717ad118bf\",\n    \"first_name\": \"Alice\",\n    \"last_name\": \"Johnson\",\n    \"email\": \"alice.johnson@example.com\",\n    \"position\": \"Designer\",\n    \"salary\": 85000,\n    \"date_of_joining\": \"2023-08-10T00:00:00.000Z\",\n    \"department\": \"Design\",\n    \"created_at\": \"2025-09-30T18:53:57.402Z\",\n    \"updated_at\": null,\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "/api/v1/emp/employees/:eid",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Add your name in the body\"\n}"
+						},
+						"url": {
+							"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/employees/6923716084d50d90b9b8928b",
+							"protocol": "https",
+							"host": [
+								"comp3123assignment01",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"emp",
+								"employees",
+								"6923716084d50d90b9b8928b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://101513972-comp3123-assignment2-reac.vercel.app"
+						},
+						{
+							"key": "Age",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Nov 2025 21:42:46 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"f12-f0q/Kd8n7RppIN8oapWhERi/ohs\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "cle1::iad1::xf8jr-1763934166643-f458dc6cbeb8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6923716084d50d90b9b8928b\",\n    \"first_name\": \"test\",\n    \"last_name\": \"test\",\n    \"email\": \"test@test.com\",\n    \"position\": \"wwwqqq\",\n    \"salary\": 123123,\n    \"date_of_joining\": \"2025-11-16T00:00:00.000Z\",\n    \"department\": \"rrrttt\",\n    \"created_at\": \"2025-11-23T20:41:04.970Z\",\n    \"updated_at\": null,\n    \"profile_picture\": \"data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZgAAAOptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAAImlsb2MAAAAAREAAAQABAAAAAAEOAAEAAAAAAAAJVgAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAamlwcnAAAABLaXBjbwAAABNjb2xybmNseAABAA0ABoAAAAAMYXYxQ4EEDAAAAAAUaXNwZQAAAAAAAALkAAAC5AAAABBwaXhpAAAAAAMICAgAAAAXaXBtYQAAAAAAAAABAAEEAYIDBAAACV5tZGF0EgAKChkmbjuPggIaDQgyxRIRgAFFFFFA9LrNyk1oV6LMWWcCoG7e3fR+Ni4S+KmWhkJQlkiMnjdigOOnBry0flo55q68WjifmsYQ7gHALNagOR29ScyJa0X46NxqgkAvGdid+SptK7Hw1kfOrCccI9pkeH+k+WHLvSO1ctjqYfRKAAEf1WTqeM8CT7MQ5wKRrarEO6ZKrzSe4lidk5jty9VnLCyyXKS6BI9BNvNwcxRuINwkIB9qxAqkqvgxIiVcyEyq1m9wPhSdm/CaSOJbGI8w2Jh2QqRpBeY9NlpwdwRDr/AEzGvCPkmM8omsYbDjmGVScwvoybg18wmXaCh6h0+V5gxqO4+xIrh+lcy9sqiLu47RIkRRNHN+D5BvGNL8nrt3iITR3ieovX9G1GoalOmctEttT3FNW5X5knjki561q+fMFGQoRc/LYBw7nsKNwMndfitscqGNInm3nk/Vxt+ZTunnGD26WRTI27dG7rTs8ruMgUqDG/qmRpLuqWxlfDgZxxmixvOSlIzrS93pcpi6nU7nfn1HGG2h1Fa/z9MM7ih0mxg9mw2Nc1mCx+b86aCYy85QoujHJOaiPwPlSWnXaCddhxafKZGPhCrAFP7hOj03RM0J30cHjs5qeA7P4ydozZSmMLnZpmPwYsS0GvPloV9Mz2b5OdKTimSaOgjdhxsi1Sw48yqD/tBHlsaAi7ELYC+kuhJ+7P+lwFKw590YffcVHlS3nPbE/PuHqR6kHh3qxwgGZI0nckY6F2adybOMD8VY0QbcQ3yRcxMaOz7i2p8iLiqRAHXRhF/AvTWJAmh9a96wNCpKydjOYSvDqw457r3DbmzcPkMM0rz0cZZQbj4/lFSfH/DNcN61e+K5bMyBnXBtyLIIAou7PoiPXU67xtz0A84Rp1BqHdxzSe91/y8818bx6z1h0Iy9UdiduVr0NwRjSdRpUTuhC7NB8v3XAVhcqFB4jgzM8LALz+qhU2eCu4EsE0HQOnAnccPLrktvlINlO2BfXj5lrq+R+IDijV68RvRdG4G3b1g8vIrh3Mim71uxPf8MRJvOkjFQATLc207f4IrqUTPYUh78k+N/BQhjfJ2QAO3Zwf4gxRzh1BxGzD54mhtwPws6dzKmiY0Cyb4TNtrFjoLeK3Rv8gKn175NrpgkmXXgWu6vN60uNXIL/ALU8R5oC9DfHjjoIXG0SNZRFGErpmX8QjaCFXfQuYZifWmd+o+DpKVBV4sHDCwoDbrRVIgEKqjrPSKjv/hl4Z9Ukd+/cP9haJZukcSp4q940qGpo2GK4gTjWPwVo0SVHTj9HzdMN1UuOjKFReIUnT7HCU25iMOeKll4zInIhqjFS3LsIU9tsXozLeEvlKnFl4lXIfiiq+7hsf1ctBRHRNvJXq25TJ/e3YQ7UW089VrEKGNjpq3EBphXrsqjjCLXt8NEo7Sx759SAyfyhdfh1Y2sJGMv39SEnQVWmIf8gIgOmrIZ2V8/NTLKL3TaI3hhWmR2xWHI3sALrD+oyRCNqXCNIFbyLm3UAcgBm2t/6w19VGxonszOfVR57H0snAALGlS0pFDWVPPrIo7V15SPq7ld3PelMBFLYy07BVhWjPcXtgsCMHgfSyLVjr272ZnHHRsDzRkD6hfn8CieuuYDQdHh8O/jDhFylasfH6ugaOJSAla93Wp22EBQoeAf9Yxvkjnlva7dlYxEdfVPIL3S+hkBOW066maxa8/nvg3iMg4gk7c5vzlU8xpCBHDalirN/ljukTggt9cF65EEN1jLj/1CmN+j4Xx6vhJqPOxbObZfmjNY4j8JtC5Cy4dfzMhwULuxWkGdrAFx2fS5jhEY0uUPh77sfuyBgOYvaSRpJdpWWMSyz3JLqNQwF19JZqy9WAYzaxpICPhSmOJlUeWYMhlOfAuli0dGG3Rk1vIXrn3ZSrpptR/JLAyyJQDVcCJybSLRHBA2qQxZ3aLDHn/Srm5hcTu+JkmOX/8qgHux5MJXEyVnXHyPog/xsXpSETii/pWu8EZdNMA+k4klD2QBTfn3YspRuKDkCvuS8gjmgtlhlLu6smCFalO3w1lkreCU0H2kIDWH0uCJksE3g/FxpatiU1rEy1kk2FqiraamfVCrJUcQK1jP0OOHGt0HBiCjSXHadSC2RkOAmvq15A27TYuBYPPmWipCHawJ0Y2N8/vhrY0okQ7YLy4YdTYvyT4RXxuKEh9arUnfeRwsk2CVu0SQJ1eXTwqAJcz27kALafKAScXm34NMJgxWk/vI8TT7FIsXfZRjbnGnlUTmxWVDuSzk2GaeO5Ge9qYCUAeW2uljqY6VV0coW/a1lbk1tx/UEHm36nbMRcejNx1UV71FuhssuShKcGwfpr/sKgMnFxlvrxYTFcN49BgjEWypdVQ/W7S7/IttS3bDnGUIcVDb7plafevRnUxTBhFerLDrw+75nMrNArpa2/TtxBOd1GWEncpVfPNgszxENrqraIzoY+NSH09mEzNwbn4wV0BkKQlKthVw7t0kSDJdxC58Dw01bleL5Y6+ychagm7cdLjVnNuRahM94XDqCdj+gIf4nHJ5LyiOVbUEbtaGJjosVcU7bfisx8XW3rdkIg020ZB5mRPkyrLv+/Mhw+hz528BBb940CumvI+QKCKHlm1OZZCPKP0mJTaqp9Pp/VfEu0CudjRHs16beeOOyXTflHqZ/WjXaW72CbKA4fmGwlo1s4uWow7wLjvQ4L8OPPcYhNjnAfROEt+HS28qjXEvOZAJ8cXLpga4LbjfdKbbdDUzc4zcK+jUgNa5sp2yGrUU1bwr3RarpLZ8iw1+ItLwwiacpcPT8F72uo+gNxXCnJJptTXtuXLPOV6VBSzNJQ7eByCH1hWsr1hWzyccc3yBfQcIsnQziv6URwWzpO9iAO/RTpEeAHR5i3oPDkM5oUEsUMciO5cgLPavF6vHupdXtUeOmjTHbt2oxMXVwyn0hmQALcdjBp7aGKJ5XtNVa+qf5vOiN0lGd5z14GGrYePQS98pHMzfEiKIVYgUOx02MQKzX9mZvfgH4J0ENWOXKylZZWVy45toxhM3pwv5X8TnftUmmb3/6Lmw9g2q68m0AGF85OzNEBasa9MEp/qbtDCGFMWD09eCHosUYBTrkkTIjbT0mm9McvWU4NtuFpnCua0GDtp04G6gCmjCAsifgBEDJRHdC2A=\",\n    \"__v\": 0\n}"
 				}
 			]
 		},
@@ -327,12 +595,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/v1/emp/employees/68dc274590bbe2717ad118bf",
-					"protocol": "http",
+					"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/employees/68dc274590bbe2717ad118bf",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"comp3123assignment01",
+						"vercel",
+						"app"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"v1",
@@ -408,6 +677,93 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"status\": true,\n    \"message\": \"Employee details updated successfully.\"\n}"
+				},
+				{
+					"name": "/api/v1/emp/employees/:eid",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"first_name\":\"Alice\",\n\"last_name\":\"Johnson\",\n\"email\":\"alice.johnson@example.com\",\n\"position\":\"Designer\",\n\"salary\":95000,\n\"date_of_joining\":\"2023-08-10T00:00:00.000Z\",\n\"department\":\"Design\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/employees/69237fbf504838776e524327",
+							"protocol": "https",
+							"host": [
+								"comp3123assignment01",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"emp",
+								"employees",
+								"69237fbf504838776e524327"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://101513972-comp3123-assignment2-reac.vercel.app"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "66"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Nov 2025 21:44:04 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"42-wZHSonFxu0FefaFcHbH0r5vkVHY\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "cle1::iad1::ql55g-1763934244505-f41ef851f6ec"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Employee details updated successfully.\"\n}"
 				}
 			]
 		},
@@ -421,12 +777,13 @@
 					"raw": "{\n\"first_name\":\"Alice\",\n\"last_name\":\n\"Johnson\",\n\"email\":\n\"alice.johnson@ex\nample.com\",\n\"position\":\n\"Designer\",\n\"salary\":\n85000,\n\"date_of_joining\":\n\"2023-08-\n10T00:00:00.000\nZ\",\n\"department\":\n\"Design\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/v1/emp/employees?eid=68dc274590bbe2717ad118bf",
-					"protocol": "http",
+					"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/employees?eid=68dc274590bbe2717ad118bf",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"comp3123assignment01",
+						"vercel",
+						"app"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"v1",
@@ -517,12 +874,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/v1/user/signup",
-					"protocol": "http",
+					"raw": "https://comp3123assignment01.vercel.app/api/v1/user/signup",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"comp3123assignment01",
+						"vercel",
+						"app"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"v1",
@@ -596,6 +954,92 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"message\": \"User created successfully.\",\n    \"user_id\": \"68dc270890bbe2717ad118ba\"\n}"
+				},
+				{
+					"name": "/api/v1/user/signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"username\":\"johndoe1\",\n\"email\":\"johndoe1@example.com\",\n\"password\":\"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://comp3123assignment01.vercel.app/api/v1/user/signup",
+							"protocol": "https",
+							"host": [
+								"comp3123assignment01",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://101513972-comp3123-assignment2-reac.vercel.app"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "77"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Nov 2025 21:43:28 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"4d-aNvqWF3uCXvpd5VLGoIGzr5ADqA\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "cle1::iad1::2mhzr-1763934208610-7332bd6b58d6"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User created successfully.\",\n    \"user_id\": \"69238000504838776e52432e\"\n}"
 				}
 			]
 		},
@@ -614,12 +1058,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/v1/user/login",
-					"protocol": "http",
+					"raw": "https://comp3123assignment01.vercel.app/api/v1/user/login",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"comp3123assignment01",
+						"vercel",
+						"app"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"v1",
@@ -693,6 +1138,209 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"message\": \"Login successful.\",\n    \"user_id\": \"68dc270890bbe2717ad118ba\"\n}"
+				},
+				{
+					"name": "/api/v1/user/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"email\":\"johndoe1@example.com\",\n\"password\":\"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://comp3123assignment01.vercel.app/api/v1/user/login",
+							"protocol": "https",
+							"host": [
+								"comp3123assignment01",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://101513972-comp3123-assignment2-reac.vercel.app"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "68"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Nov 2025 21:45:01 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"44-uc0SHBaqiU3PwQHcgJ1F79/0bZo\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "cle1::iad1::ftrs6-1763934301587-2174b848df19"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Login successful.\",\n    \"user_id\": \"69238000504838776e52432e\"\n}"
+				}
+			]
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/search?keyword=de",
+					"protocol": "https",
+					"host": [
+						"comp3123assignment01",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"emp",
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "de"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://comp3123assignment01.vercel.app/api/v1/emp/search?keyword=de",
+							"protocol": "https",
+							"host": [
+								"comp3123assignment01",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"emp",
+								"search"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "de"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://101513972-comp3123-assignment2-reac.vercel.app"
+						},
+						{
+							"key": "Age",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Length",
+							"value": "285"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Nov 2025 21:43:07 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"11d-M7q/tH+ym+9sraGk+ab0Z4/fxyI\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "cle1::iad1::hzbk7-1763934187292-d00dc310aa59"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"69237fbf504838776e524327\",\n        \"first_name\": \"Alice\",\n        \"last_name\": \"Johnson\",\n        \"email\": \"alice.johnson@example.com\",\n        \"position\": \"Designer\",\n        \"salary\": 85000,\n        \"date_of_joining\": \"2023-08-10T00:00:00.000Z\",\n        \"department\": \"Design\",\n        \"created_at\": \"2025-11-23T21:42:23.274Z\",\n        \"updated_at\": null,\n        \"__v\": 0\n    }\n]"
 				}
 			]
 		}
