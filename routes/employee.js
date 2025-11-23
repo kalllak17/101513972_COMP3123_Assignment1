@@ -87,7 +87,7 @@ router.delete('/emp/employees', async function (req, res) {
 })
 
 
-router.get('/emp/employees/search', async function (req, res) {
+router.get('/emp/search', async function (req, res) {
     var keyword = req.query.keyword;
     if (!keyword) {
         var result = await employeeController.searchEmployee(keyword);
