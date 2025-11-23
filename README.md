@@ -31,3 +31,11 @@ You can test the live API using **Postman** and the provided collection.
      - Create, read, update, and delete employees
 
 ---
+
+## 🟣 Deployment Instructions
+
+- **Frontend:** Deployed on Vercel  
+  [https://101513972-comp3123-assignment2-reac.vercel.app](https://101513972-comp3123-assignment2-reac.vercel.app)
+
+- **Backend:** Deployed on Vercel / any cloud service  
+  [https://comp3123assignment01.vercel.app](https://comp3123assignment01.vercel.app)
