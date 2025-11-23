@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 require('dotenv').config();
+const multer = require('multer')
 
 const PORT = process.env.PORT || 5000;
 
@@ -34,6 +35,9 @@ app.use(cors({
     allowedHeaders: ['Content-Type','Authorization']
 }));
 
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
+
 initializePassport(passport);
 app.use(passport.initialize());
 
@@ -41,6 +45,11 @@ app.use(passport.initialize());
 app.use('/', indexRouter);
 app.use('/api/v1', usersRouter);
 app.use('/api/v1', employeeRouter)
+
+app.use((req, res, next) => {
+    req.upload = upload;
+    next();
+});
 
 const connectDB = require('./config/db');
 connectDB();

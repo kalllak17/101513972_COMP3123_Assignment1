@@ -11,7 +11,8 @@ const employeeSchema = new mongoose.Schema(
         "date_of_joining": Date,
         "department": String,
         "created_at": Date,
-        "updated_at": Date
+        "updated_at": Date,
+        "profile_picture": String,
     }
 )
 
