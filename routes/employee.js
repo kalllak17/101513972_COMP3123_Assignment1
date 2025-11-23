@@ -15,7 +15,7 @@ router.get('/emp/employees', async function (req, res) {
 
 router.post('/emp/employees', async function (req, res) {
 
-    var {first_name, last_name, email, position, salary, date_of_joining, department} = req.body;
+    var {first_name, last_name, email, position, salary, date_of_joining, department, profile_picture} = req.body;
 
     var exists = await employeeController.isEmployeeExist(first_name, last_name, email, department);
     console.log(exists);
@@ -23,7 +23,7 @@ router.post('/emp/employees', async function (req, res) {
         return res.status(400).json({error: 'Employee already exists'});
     }
 
-    var newEmployee = await employeeController.createEmployee(first_name, last_name, email, position, salary, date_of_joining, department);
+    var newEmployee = await employeeController.createEmployee(first_name, last_name, email, position, salary, date_of_joining, department, profile_picture);
 
     return res
         .status(201)
