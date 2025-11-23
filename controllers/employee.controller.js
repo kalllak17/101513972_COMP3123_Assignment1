@@ -45,7 +45,7 @@ exports.findEmployeeById = async (id) => {
     return employee;
 }
 
-exports.updateEmployee = async (id, first_name, last_name, email, position, salary, department, profile_picture) => {
+exports.updateEmployee = async (id, first_name, last_name, email, position, salary, date_of_joining, department, profile_picture) => {
     var employee = await findEmployeeById(id);
     if (employee) {
         employee.first_name = first_name;
@@ -53,6 +53,7 @@ exports.updateEmployee = async (id, first_name, last_name, email, position, sala
         employee.email = email;
         employee.position = position;
         employee.salary = salary;
+        employee.date_of_joining = date_of_joining;
         employee.department = department;
         employee.profile_picture = profile_picture;
         employee.updated_at = new Date(Date.now());

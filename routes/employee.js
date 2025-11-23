@@ -53,12 +53,12 @@ router.get('/emp/employees/:eid', async function (req, res) {
 router.put('/emp/employees/:eid', async function (req, res) {
     var eid = req.params.eid;
     // var {position, salary} = req.body;
-    var {first_name, last_name, email, position, salary, department, profile_picture} = req.body;
+    var {first_name, last_name, email, position, salary, date_of_joining,  department, profile_picture} = req.body;
     if (!eid) {
         return res.status(400).json({error: 'Employee not found'});
     }
 
-    var result = await employeeController.updateEmployee(eid, first_name, last_name, email, position, salary, department, profile_picture);
+    var result = await employeeController.updateEmployee(eid, first_name, last_name, email, position, salary, date_of_joining, department, profile_picture);
 
     if (result.status) {
         return res.status(200).json(result)
